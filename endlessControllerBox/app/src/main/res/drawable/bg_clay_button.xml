@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Shadow -->
+    <item android:top="6dp" android:left="4dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="40dp"/>
+            <solid android:color="#33805050"/>
+        </shape>
+    </item>
+    <!-- Clay Body -->
+    <item android:bottom="6dp" android:right="4dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="40dp"/>
+            <gradient
+                android:type="linear"
+                android:angle="315"
+                android:startColor="#FFD1C4"
+                android:centerColor="#FFB8A6"
+                android:endColor="#E89B88"/>
+            <stroke android:width="3dp" android:color="#FFF0E8"/>
+        </shape>
+    </item>
+    <!-- Highlight -->
+    <item android:bottom="14dp" android:right="14dp" android:top="10dp" android:left="10dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="40dp"/>
+            <gradient
+                android:type="linear"
+                android:angle="135"
+                android:startColor="#80FFFFFF"
+                android:endColor="#00FFFFFF"/>
+        </shape>
+    </item>
+</layer-list>
